@@ -49,7 +49,7 @@
                 <div class="layui-col-md12">
                     <div class="layui-card">
                         <div class="layui-card-body ">
-                            <form class="layui-form layui-col-space5" action="query.do" method = "post">                                  
+                            <form class="layui-form layui-col-space5" action="query.does" method = "post">                                  
                                 <div class="layui-inline layui-show-xs-block">
                                     <input type="text" name="account"  placeholder="请输入账号" class="layui-input"/>
                                 </div>
@@ -80,13 +80,13 @@
                                       <a title="测试"  onclick="xadmin.open('测试','view/other/success.jsp',400,400)" href="javascript:;">
                                         <i class="layui-icon">&#xe642;</i>
                                       </a>
-                                      <c:url value="edit.do" var="editurl">
+                                      <c:url value="edit.does" var="editurl">
                                 		<c:param name="id" value="${cust.id }"></c:param>
                             		  </c:url>
                                       <a title="编辑" onclick="xadmin.open('编辑','${editurl }',600,400)" href="javascript:;">
                                         <i class="layui-icon">&#xe631;</i>
                                       </a>
-                                      <c:url value="delete.do" var="deleteurl">
+                                      <c:url value="delete.does" var="deleteurl">
                                 		<c:param name="id" value="${cust.id }"></c:param>
                             		  </c:url>
                                       <a title="删除" href="${deleteurl }">
